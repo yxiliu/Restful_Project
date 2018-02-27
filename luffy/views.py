@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from rest_framework import exceptions
 from django.http import JsonResponse,HttpResponse
 from luffy import models
-
+import pymysql
 
 class Login(APIView):
     def post(self,request):
@@ -35,3 +35,30 @@ class Login(APIView):
         return response
 
 
+class CoursesView(APIView):
+
+
+    def get(self,request,*args,**kwargs):
+        conn = pymysql.connect(host='192.168.20.13', user='lw', password='lw123', database='luffycity', charset='utf8')
+        cursor = conn.cursor()  # 拿到游标，即mysql>
+
+        pk = kwargs.get('pk')
+        if pk:
+            cursor.execute('select name from luffy_coursesubcategory where id=%s' %(pk))
+            ret = {
+                'title':cursor.fetchone()[0],
+                # 'summary':'老师，太饿了。怎么还不下课'
+            }
+        else:
+            cursor.execute('select id,name from luffy_coursesubcategory order by id')
+            course_list=[]
+            for course in cursor.fetchall():
+                course_list.append({"id": course[0], "name": course[1]})
+            ret = {
+                'code':1000,
+                'courseList':None
+            }
+            ret["courseList"]=course_list
+        response = JsonResponse(ret)
+        response['Access-Control-Allow-Origin'] = "*"
+        return response
