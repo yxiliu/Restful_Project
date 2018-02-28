@@ -299,7 +299,7 @@ class Article(models.Model):
     position_choices = ((0, '信息流'), (1, 'banner大图'), (2, 'banner小图'))
     position = models.SmallIntegerField(choices=position_choices, default=0, verbose_name="位置")
 
-    # comment = GenericRelation("Comment")  # 用于GenericForeignKey反向查询， 不会生成表字段，切勿删除，如有疑问请联系老村长
+    comment = GenericRelation("Comment")  # 用于GenericForeignKey反向查询， 不会生成表字段，切勿删除，如有疑问请联系老村长
 
     def __str__(self):
         return "%s-%s" % (self.source, self.title)
