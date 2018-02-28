@@ -49,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'luffy.middlewares.rbac.LoginMiddleware',
 ]
 
 ROOT_URLCONF = 'Restful_Project.urls'
@@ -124,4 +125,40 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
+#中间件查询cookie
+COOKIES_KEY='token'
+
 STATIC_URL = '/static/'
+
+
+REST_FRAMEWORK = {
+        'UNAUTHENTICATED_USER': None, #默认user
+        'UNAUTHENTICATED_TOKEN': None, # 默认auth
+        #认证
+        "DEFAULT_AUTHENTICATION_CLASSES": [
+            # "luffy.views.MyAuthentication",
+        ],
+        #权限
+        # "DEFAULT_PERMISSION_CLASSES": [
+        #     "app01.utils.TestPermission",
+        #     ],
+        #节流
+        # 'DEFAULT_THROTTLE_RATES':{
+        #     'myscope_anon':'5/minute',
+        #     'myscope_user':'10/minute',
+        # },
+        #版本
+        # 'DEFAULT_VERSION':'v1',
+        # 'ALLOWED_VERSIONS':'[v1,v2]',
+        # 'VERSION_PARAM':'version',
+        # 'DEFAULT_VERSIONING_CLASS':"rest_framework.versioning.QueryParameterVersioning",
+        # 'DEFAULT_VERSIONING_CLASS':"rest_framework.versioning.URLPathVersioning",
+
+        #解析器 parser
+        # 'DEFAULT_PARSER_CLASSES':[
+        #     'rest_framework.parsers.JSONParser',
+        #     'rest_framework.parsers.FormParser',
+        # ],
+        #每页默认显示几条数据
+        # 'PAGE_SIZE':1,
+    }
