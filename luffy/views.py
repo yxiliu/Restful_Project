@@ -4,12 +4,10 @@ from rest_framework.response import Response
 from rest_framework import exceptions
 from django.http import JsonResponse,HttpResponse
 from luffy import models
-<<<<<<< HEAD
-=======
+
 from luffy import utils
 import datetime
 
->>>>>>> dev
 class Login(APIView):
     authentication_classes = []
     def post(self,request):
@@ -19,9 +17,7 @@ class Login(APIView):
         user_obj = models.Account.objects.filter(username=username,password=password)
         print(user_obj)
         if not user_obj:
-            response = JsonResponse(data)
-            response['Access-Control-Allow-Origin'] = "*"
-            return response
+            return JsonResponse(data)
 
         data['state']=True
         data['msg']='登录成功'
@@ -31,33 +27,26 @@ class Login(APIView):
         data["token"]=token
         data["username"]=models.UserAuthToken.objects.get(user=user_obj).user.username
 
-        # response.set_cookie('token',token)
-        # response.set_cookie('username',username)
-        response = JsonResponse(data)
-        response['Access-Control-Allow-Origin'] = "*"
-        return response
+        return JsonResponse(data)
 
     def options(self, request, *args, **kwargs):
-<<<<<<< HEAD
-        response = HttpResponse()
-        response['Access-Control-Allow-Origin'] = '*'
-        response['Access-Control-Allow-Headers'] = 'content-type'
-        return response
-=======
-        # response = HttpResponse()
-        # response['Access-Control-Allow-Origin'] = '*'
-        # response['Access-Control-Allow-Headers'] = '*'
-
         return HttpResponse()
->>>>>>> dev
 
 class News(APIView):
-    # authentication_classes = [utils.MyAuthentication,]
     def get(self,request,*args,**kwargs):
         self.dispatch
         ret={'state':True,"msg":"News",'newslist':None}
+        article_list = models.Article.objects.values('id', 'title', 'brief', 'head_img', 'date',
+                                                     'view_num', 'comment_num', 'collect_num')
+        newslist = []
+        for article in article_list:
+            article['date'] = article['date'].strftime('%Y-%m-%d')
+            newslist.append(article)
 
-<<<<<<< HEAD
+        ret['newslist'] = newslist
+        return JsonResponse(ret)
+
+
 class CoursesView(APIView):
     def get(self,request,*args,**kwargs):
         pk = kwargs.get('pk')
@@ -77,33 +66,13 @@ class CoursesView(APIView):
         response = JsonResponse(ret)
         response['Access-Control-Allow-Origin'] = "*"
         return response
-=======
-        article_list = models.Article.objects.values('id','title','brief','head_img','date',
-                               'view_num','comment_num','collect_num')
-        newslist=[]
-        for article in article_list:
-            article['date'] = article['date'].strftime('%Y-%m-%d')
-            newslist.append(article)
-
-        ret['newslist']=newslist
-        # response = JsonResponse(ret)
-        # response['Access-Control-Allow-Origin'] = '*'
-        return JsonResponse(ret)
-
+    
     def options(self, request, *args, **kwargs):
-        # response = HttpResponse()
-        # response['Access-Control-Allow-Origin'] = '*'
-        # response['Access-Control-Allow-Headers'] = '*'
         return HttpResponse()
 
 class NewsDetail(APIView):
-    # authentication_classes = [utils.MyAuthentication,]
     def get(self,request,nid,*args,**kwargs):
-
-        # print(request.COOKIES)
-
         ret={'state':True,"msg":"NewsDetail",'detaillist':None}
-        # print(request.path,nid)
         detail_list = models.Article.objects.filter(id=nid).values('title',
                            'date','view_num','agree_num','collect_num','content','source__name')
         detaillist=[]
@@ -111,13 +80,8 @@ class NewsDetail(APIView):
             item['date'] = item['date'].strftime('%Y-%m-%d')
             detaillist.append(item)
         ret['detaillist']=detaillist
-        # response = JsonResponse(ret)
-        # response['Access-Control-Allow-Origin'] = '*'
         return JsonResponse(ret)
 
     def options(self, request, *args, **kwargs):
-        # response = HttpResponse()
-        # response['Access-Control-Allow-Origin'] = '*'
-        # response['Access-Control-Allow-Headers'] = '*'
         return HttpResponse()
->>>>>>> dev
+

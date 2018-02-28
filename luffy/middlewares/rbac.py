@@ -20,12 +20,12 @@ class MiddlewareMixin(object):
         return response
 
 class LoginMiddleware(MiddlewareMixin):
-    def process_request(self,request):
-        if request.path_info == '/login/' :
-            return None
-        if request.COOKIES.get(settings.COOKIES_KEY,None):
-            return None
-        return JsonResponse({'state':False,'msg':'登录后才能访问'})
+    # def process_request(self,request):
+    #     if request.path_info == '/login/' :
+    #         return None
+    #     if request.COOKIES.get(settings.COOKIES_KEY,None):
+    #         return None
+    #     return JsonResponse({'state':False,'msg':'登录后才能访问'})
 
     def process_response(self,request,response):
         response['Access-Control-Allow-Origin'] = "*"
