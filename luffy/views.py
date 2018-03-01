@@ -100,6 +100,7 @@ class CoursesView(APIView):
                 'period':period,
                 'level':level,
                 'price_policy_list':price_policy_list,
+                'rbac':True,
             }
         else:
             course_list=[]
@@ -108,6 +109,7 @@ class CoursesView(APIView):
                 course_list.append({"id": course[0], "name": course[1],"course_img":course[2],"level":course[3]})
             ret = {'code':1000,'courseList':None}
             ret["courseList"]=course_list
+            ret["rbac"]=True
         response = JsonResponse(ret)
         response['Access-Control-Allow-Origin'] = "*"
         return response
