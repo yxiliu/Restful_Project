@@ -50,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'luffy.middlewares.rbac.LoginMiddleware',
+    'luffy.middlewares.rbac.RbacMiddleware',
 ]
 
 ROOT_URLCONF = 'Restful_Project.urls'
