@@ -20,16 +20,20 @@ class MiddlewareMixin(object):
         return response
 
 class LoginMiddleware(MiddlewareMixin):
-    # def process_request(self,request):
-    #     if request.path_info == '/login/' :
-    #         return None
-    #     if request.COOKIES.get(settings.COOKIES_KEY,None):
-    #         return None
-    #     return JsonResponse({'state':False,'msg':'登录后才能访问'})
+    def process_request(self,request):
+        if request.path_info == '/login/' :
+            return None
+
+        # if request.COOKIES.get(settings.COOKIES_KEY,None):
+        #     return None
+
+        # if request.session.get(settings.COOKIES_KEY,None):
+        #     return None
+        # return JsonResponse({'state':False,'code':302,'msg':'登录后才能访问'})
 
     def process_response(self,request,response):
         response['Access-Control-Allow-Origin'] = "*"
-        response['Access-Control-Allow-Headers'] = '*'
+        response['Access-Control-Allow-Headers'] = '*' #headers 不写*  有多少加多少 逗号分隔
         response['Access-Control-Allow-Methods'] = '*'
         return response
 
