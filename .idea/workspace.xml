@@ -5,16 +5,26 @@
     <list default="true" id="f253ee89-fa6a-43e8-b1dc-1536295ea0fe" name="Default" comment="" />
 =======
     <list default="true" id="f253ee89-fa6a-43e8-b1dc-1536295ea0fe" name="Default" comment="">
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+=======
+<<<<<<< HEAD
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+>>>>>>> ee8a56d58d47bbcee66751c094bbddfcf75ca3b8
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Restful_Project.iml" afterPath="$PROJECT_DIR$/.idea/Restful_Project.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Restful_Project/settings.py" afterPath="$PROJECT_DIR$/Restful_Project/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Restful_Project/urls.py" afterPath="$PROJECT_DIR$/Restful_Project/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/luffy/__init__.py" afterPath="$PROJECT_DIR$/luffy/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/luffy/middlewares/rbac.py" afterPath="$PROJECT_DIR$/luffy/middlewares/rbac.py" />
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/luffy/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/luffy/migrations/0001_initial.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/luffy/models.py" afterPath="$PROJECT_DIR$/luffy/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/luffy/utils.py" afterPath="$PROJECT_DIR$/luffy/utils.py" />
+=======
+>>>>>>> fb732d56fabcc9589bf55e46bf120648136b2a8d
+>>>>>>> ee8a56d58d47bbcee66751c094bbddfcf75ca3b8
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/luffy/views.py" afterPath="$PROJECT_DIR$/luffy/views.py" />
     </list>
 >>>>>>> dev
@@ -39,6 +49,14 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
+<<<<<<< HEAD
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/luffy/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1633">
+              <caret line="71" column="33" lean-forward="true" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+=======
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/luffy/models.py">
@@ -114,12 +132,18 @@
         <entry file="file://$PROJECT_DIR$/luffy/views.py">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="100">
               <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
 =======
             <state relative-caret-position="114">
               <caret line="69" column="32" lean-forward="false" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
 >>>>>>> dev
+=======
+            <state relative-caret-position="-1104">
+              <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+>>>>>>> fb732d56fabcc9589bf55e46bf120648136b2a8d
+>>>>>>> ee8a56d58d47bbcee66751c094bbddfcf75ca3b8
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -130,8 +154,18 @@
       <file leaf-file-name="related_descriptors.py" pinned="false" current-in-tab="false">
         <entry file="file://D:/Anaconda/Lib/site-packages/django/db/models/fields/related_descriptors.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="3914">
               <caret line="215" column="0" lean-forward="false" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="374">
+              <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+              <folding />
+=======
+            <state relative-caret-position="38">
+              <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+>>>>>>> ee8a56d58d47bbcee66751c094bbddfcf75ca3b8
               <folding />
             </state>
           </provider>
@@ -238,6 +272,7 @@
               <folding>
                 <element signature="e#0#60#0" expanded="true" />
               </folding>
+>>>>>>> fb732d56fabcc9589bf55e46bf120648136b2a8d
             </state>
           </provider>
         </entry>
@@ -265,12 +300,27 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/luffy/admin.py" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/luffy/models.py" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/Restful_Project/urls.py" />
+        <option value="$PROJECT_DIR$/luffy/__init__.py" />
+        <option value="$PROJECT_DIR$/Restful_Project/settings.py" />
+        <option value="$PROJECT_DIR$/luffy/views.py" />
+=======
+        <option value="$PROJECT_DIR$/luffy/utils.py" />
+>>>>>>> ee8a56d58d47bbcee66751c094bbddfcf75ca3b8
         <option value="$PROJECT_DIR$/Restful_Project/settings.py" />
         <option value="$PROJECT_DIR$/luffy/middlewares/rbac.py" />
         <option value="$PROJECT_DIR$/luffy/utils.py" />
         <option value="$PROJECT_DIR$/luffy/models.py" />
         <option value="$PROJECT_DIR$/Restful_Project/urls.py" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/luffy/views.py" />
+=======
+>>>>>>> fb732d56fabcc9589bf55e46bf120648136b2a8d
+>>>>>>> ee8a56d58d47bbcee66751c094bbddfcf75ca3b8
       </list>
     </option>
   </component>
@@ -280,10 +330,25 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+<<<<<<< HEAD
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="128" />
+    <option name="y" value="54" />
+    <option name="width" value="1740" />
+    <option name="height" value="974" />
+=======
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="x" value="-27" />
     <option name="width" value="1382" />
     <option name="height" value="729" />
+=======
+    <option name="x" value="311" />
+    <option name="y" value="1" />
+    <option name="width" value="1366" />
+    <option name="height" value="715" />
+>>>>>>> fb732d56fabcc9589bf55e46bf120648136b2a8d
+>>>>>>> ee8a56d58d47bbcee66751c094bbddfcf75ca3b8
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -474,16 +539,20 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
+<<<<<<< HEAD
+        <env name="DJANGO_SETTINGS_MODULE" value="Restful_Project.settings" />
+=======
+>>>>>>> fb732d56fabcc9589bf55e46bf120648136b2a8d
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Python36\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Restful_Project" />
       <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
+      <option name="port" value="8001" />
       <option name="host" value="" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
@@ -620,6 +689,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-27" y="0" width="1382" height="729" extended-state="0" />
     <editor active="true" />
     <layout>
@@ -632,6 +702,37 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22767076" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+=======
+<<<<<<< HEAD
+    <frame x="128" y="54" width="1740" height="974" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15486194" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+    <frame x="311" y="1" width="1366" height="715" extended-state="0" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17457886" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> fb732d56fabcc9589bf55e46bf120648136b2a8d
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844037" sideWeight="0.5030581" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4283871" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844037" sideWeight="0.4969419" order="7" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> fb732d56fabcc9589bf55e46bf120648136b2a8d
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49551168" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3212903" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3225256" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> fb732d56fabcc9589bf55e46bf120648136b2a8d
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+>>>>>>> ee8a56d58d47bbcee66751c094bbddfcf75ca3b8
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -698,7 +799,11 @@
         <state relative-caret-position="552">
           <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
+<<<<<<< HEAD
+            <element signature="e#0#32#0" expanded="false" />
+=======
             <element signature="e#649#681#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1519954864111" expanded="true" signature="764:1110" ph="..." />
 =======
         <state relative-caret-position="38">
@@ -706,6 +811,9 @@
           <folding>
             <marker date="1519954770042" expanded="true" signature="10770:12422" ph="..." />
 >>>>>>> dev
+=======
+>>>>>>> fb732d56fabcc9589bf55e46bf120648136b2a8d
+>>>>>>> ee8a56d58d47bbcee66751c094bbddfcf75ca3b8
           </folding>
         </state>
       </provider>
@@ -713,8 +821,20 @@
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Restful_Project/settings.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="437">
+          <caret line="19" column="37" lean-forward="false" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+          <folding>
+            <element signature="e#649#681#0" expanded="false" />
+          </folding>
+=======
         <state relative-caret-position="2875">
           <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+          <folding />
+>>>>>>> fb732d56fabcc9589bf55e46bf120648136b2a8d
+>>>>>>> ee8a56d58d47bbcee66751c094bbddfcf75ca3b8
         </state>
       </provider>
     </entry>
@@ -770,8 +890,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Restful_Project/settings.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="-1273">
           <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+=======
+        <state relative-caret-position="644">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+<<<<<<< HEAD
+          <folding>
+            <element signature="e#0#32#0" expanded="false" />
+          </folding>
+=======
+>>>>>>> fb732d56fabcc9589bf55e46bf120648136b2a8d
+>>>>>>> ee8a56d58d47bbcee66751c094bbddfcf75ca3b8
         </state>
       </provider>
     </entry>
@@ -798,8 +929,12 @@
         <state relative-caret-position="437">
           <caret line="19" column="37" lean-forward="false" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
           <folding>
+<<<<<<< HEAD
             <element signature="e#649#681#0" expanded="true" />
             <marker date="1519954864111" expanded="true" signature="764:1110" ph="..." />
+=======
+            <element signature="e#649#681#0" expanded="false" />
+>>>>>>> ee8a56d58d47bbcee66751c094bbddfcf75ca3b8
           </folding>
 =======
         <state relative-caret-position="570">
@@ -841,8 +976,19 @@
     </entry>
     <entry file="file://D:/Anaconda/Lib/site-packages/django/core/handlers/base.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1501">
           <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+=======
+        <state relative-caret-position="644">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+<<<<<<< HEAD
+          <folding>
+            <element signature="e#0#32#0" expanded="false" />
+          </folding>
+=======
+>>>>>>> fb732d56fabcc9589bf55e46bf120648136b2a8d
+>>>>>>> ee8a56d58d47bbcee66751c094bbddfcf75ca3b8
         </state>
       </provider>
     </entry>
@@ -852,11 +998,15 @@
           <caret line="2" column="45" lean-forward="true" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
           <folding>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <element signature="e#649#681#0" expanded="true" />
             <marker date="1519954864111" expanded="true" signature="764:1110" ph="..." />
 =======
             <element signature="e#0#60#0" expanded="true" />
 >>>>>>> dev
+=======
+            <element signature="e#649#681#0" expanded="false" />
+>>>>>>> ee8a56d58d47bbcee66751c094bbddfcf75ca3b8
           </folding>
         </state>
       </provider>
@@ -891,8 +1041,19 @@
     </entry>
     <entry file="file://D:/Anaconda/Lib/site-packages/rest_framework/response.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state relative-caret-position="667">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+<<<<<<< HEAD
+          <folding>
+            <element signature="e#0#32#0" expanded="false" />
+          </folding>
+=======
+>>>>>>> fb732d56fabcc9589bf55e46bf120648136b2a8d
+>>>>>>> ee8a56d58d47bbcee66751c094bbddfcf75ca3b8
         </state>
       </provider>
     </entry>
@@ -917,8 +1078,12 @@
         <state relative-caret-position="36">
           <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
           <folding>
+<<<<<<< HEAD
             <element signature="e#649#681#0" expanded="true" />
             <marker date="1519954864111" expanded="true" signature="764:1110" ph="..." />
+=======
+            <element signature="e#649#681#0" expanded="false" />
+>>>>>>> ee8a56d58d47bbcee66751c094bbddfcf75ca3b8
           </folding>
 =======
         <state relative-caret-position="-475">
@@ -956,6 +1121,7 @@
     <entry file="file://$PROJECT_DIR$/luffy/tests.py">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="1995">
           <caret line="275" column="25" lean-forward="false" selection-start-line="275" selection-start-column="25" selection-end-line="275" selection-end-column="25" />
           <folding>
@@ -965,6 +1131,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
 >>>>>>> dev
+=======
+        <state relative-caret-position="644">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="false" />
+          </folding>
+=======
+        <state relative-caret-position="1995">
+          <caret line="275" column="25" lean-forward="false" selection-start-line="275" selection-start-column="25" selection-end-line="275" selection-end-column="25" />
+          <folding />
+>>>>>>> fb732d56fabcc9589bf55e46bf120648136b2a8d
+>>>>>>> ee8a56d58d47bbcee66751c094bbddfcf75ca3b8
         </state>
       </provider>
     </entry>
@@ -984,6 +1162,7 @@
         <state relative-caret-position="177">
           <caret line="36" column="6" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
           <folding>
+<<<<<<< HEAD
             <element signature="e#0#49#1" expanded="false" />
             <element signature="e#471#819#0" expanded="false" />
             <element signature="e#471#614#1" expanded="false" />
@@ -1018,6 +1197,13 @@
             <element signature="e#6731#7017#1" expanded="false" />
             <element signature="e#7023#7095#0" expanded="false" />
             <element signature="e#7311#7441#0" expanded="false" />
+=======
+<<<<<<< HEAD
+            <element signature="e#649#681#0" expanded="false" />
+=======
+            <element signature="e#0#9#0" expanded="true" />
+>>>>>>> fb732d56fabcc9589bf55e46bf120648136b2a8d
+>>>>>>> ee8a56d58d47bbcee66751c094bbddfcf75ca3b8
           </folding>
 >>>>>>> dev
         </state>
@@ -1110,13 +1296,22 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://D:/Anaconda/Lib/site-packages/django/db/backends/mysql/base.py">
+=======
+<<<<<<< HEAD
+    <entry file="file://D:/Anaconda/Lib/site-packages/rest_framework/response.py" />
+    <entry file="file://$PROJECT_DIR$/luffy/models.py">
+=======
+    <entry file="file://$PROJECT_DIR$/luffy/admin.py">
+>>>>>>> ee8a56d58d47bbcee66751c094bbddfcf75ca3b8
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
           <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://D:/Anaconda/Lib/site-packages/pymysql/err.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1976">
@@ -1132,6 +1327,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/luffy/apps.py">
+=======
+    <entry file="file://D:/Anaconda/Lib/site-packages/rest_framework/response.py">
+>>>>>>> fb732d56fabcc9589bf55e46bf120648136b2a8d
+>>>>>>> ee8a56d58d47bbcee66751c094bbddfcf75ca3b8
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1292,6 +1491,7 @@
         <state relative-caret-position="437">
           <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
           <folding>
+<<<<<<< HEAD
             <element signature="e#649#681#0" expanded="true" />
             <marker date="1519954864111" expanded="true" signature="764:1110" ph="..." />
 =======
@@ -1300,6 +1500,9 @@
           <folding>
             <element signature="e#0#100#0" expanded="true" />
 >>>>>>> dev
+=======
+            <element signature="e#649#681#0" expanded="false" />
+>>>>>>> ee8a56d58d47bbcee66751c094bbddfcf75ca3b8
           </folding>
         </state>
       </provider>
@@ -1317,11 +1520,30 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/luffy/admin.py">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
         <state relative-caret-position="100">
           <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/Restful_Project/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="121">
+          <caret line="84" column="31" lean-forward="false" selection-start-line="84" selection-start-column="31" selection-end-line="84" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/luffy/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+=======
+        <state relative-caret-position="-1104">
+          <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+>>>>>>> ee8a56d58d47bbcee66751c094bbddfcf75ca3b8
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
@@ -1352,6 +1574,7 @@
 <<<<<<< HEAD
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
 =======
         <state relative-caret-position="1102">
           <caret line="58" column="27" lean-forward="false" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
@@ -1376,9 +1599,21 @@
             <marker date="1519954770024" expanded="true" signature="15385:15756" ph="..." />
           </folding>
 >>>>>>> dev
+=======
+>>>>>>> fb732d56fabcc9589bf55e46bf120648136b2a8d
+          <folding />
+>>>>>>> ee8a56d58d47bbcee66751c094bbddfcf75ca3b8
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/luffy/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1633">
+          <caret line="71" column="33" lean-forward="true" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+=======
     <entry file="file://$PROJECT_DIR$/luffy/models.py">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -1405,6 +1640,7 @@
         <state relative-caret-position="437">
           <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
           <folding>
+<<<<<<< HEAD
             <element signature="e#649#681#0" expanded="true" />
             <marker date="1519954769945" expanded="true" signature="764:1202" ph="..." />
           </folding>
@@ -1417,6 +1653,10 @@
           <caret line="69" column="32" lean-forward="false" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
+=======
+            <element signature="e#0#9#0" expanded="true" />
+>>>>>>> fb732d56fabcc9589bf55e46bf120648136b2a8d
+>>>>>>> ee8a56d58d47bbcee66751c094bbddfcf75ca3b8
           </folding>
 >>>>>>> dev
         </state>
