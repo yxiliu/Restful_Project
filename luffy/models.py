@@ -300,6 +300,7 @@ class Article(models.Model):
     position = models.SmallIntegerField(choices=position_choices, default=0, verbose_name="位置")
 
     comment = GenericRelation("Comment")  # 用于GenericForeignKey反向查询， 不会生成表字段，切勿删除，如有疑问请联系老村长
+    collection = GenericRelation("Collection")  # 用于GenericForeignKey反向查询， 不会生成表字段，切勿删除，如有疑问请联系老村长
 
     def __str__(self):
         return "%s-%s" % (self.source, self.title)
@@ -317,14 +318,16 @@ class Collection(models.Model):
     class Meta:
         unique_together = ('content_type', 'object_id', 'account')
 
+    def __str__(self):
+        return '%s'%self.account.username
 
 class Comment(models.Model):
     """通用的评论表"""
-    # content_type = models.ForeignKey(ContentType, blank=True, null=True, verbose_name="类型")
-    # object_id = models.PositiveIntegerField(blank=True, null=True)
-    # content_object = GenericForeignKey('content_type', 'object_id')
+    content_type = models.ForeignKey(ContentType, blank=True, null=True, verbose_name="类型")
+    object_id = models.PositiveIntegerField(blank=True, null=True)
+    content_object = GenericForeignKey('content_type', 'object_id')
     # FK(Article)
-    article = models.ForeignKey('Article')
+    # article = models.ForeignKey('Article')
     p_node = models.ForeignKey("self", blank=True, null=True, verbose_name="父级评论")
     content = models.TextField(max_length=1024)
     account = models.ForeignKey("Account", verbose_name="会员名")
@@ -352,6 +355,17 @@ class UserAuthToken(models.Model):
 
     def __str__(self):
         return '%s token'%self.user.username
+
+    def save(self, *args, **kwargs):
+        import datetime
+        self.token = self.generate_key()
+        self.created = datetime.datetime.utcnow()
+        return super(UserAuthToken, self).save(*args, **kwargs)
+
+    def generate_key(self):
+        import os
+        import binascii
+        return binascii.hexlify(os.urandom(20)).decode()
 
 
 
