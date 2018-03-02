@@ -23,4 +23,6 @@ urlpatterns = [
     url(r'^courses/(?P<pk>\d+)\.(?P<format>[a-z0-9]+)$', vluffy.CoursesView.as_view()),
     url(r'^news/$', vluffy.News().as_view()),
     url(r'^news/detail/(?P<nid>\d+)/$', vluffy.NewsDetail().as_view()),
+
+    url(r'^article/collection/(?P<nid>\d+)/$', vluffy.ArticleCollection().as_view()),#文章点赞
 ]
