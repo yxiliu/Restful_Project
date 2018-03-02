@@ -11,7 +11,8 @@ from luffy import utils
 from django.db import transaction
 from django.db.models import F
 import datetime
-
+import redis
+import json
 class Login(APIView):
     '''
     code:    1000 正确
@@ -19,6 +20,7 @@ class Login(APIView):
     '''
     authentication_classes = [utils.LoginAuthentication,]
     def post(self,request):
+        self.dispatch()
         data={'code':1000,'detail':'登录成功'}
         if not request.user:
             data['code']=1010
@@ -140,4 +142,50 @@ class ArticleCollection(APIView):
 
 
 
+
+class CartView(APIView):
+    authentication_classes = [utils.TokenAuthentication,]
+    def get(self,request):
+        user_id = request.user.id
+        ret = {"code":1000,"msg":"wawa"}
+        conn = redis.Connection(pool=utils.pool)
+        something = conn.hget("Chart", request.user.id)
+        curent=json.loads(something)
+        return Response(curent)
+
+    def post(self,request):
+        self
+        ret = {'code': 1000, 'msg': None}
+        course_id = request.data.get('course_id')
+        price_policy_id = request.data.get('price_policy_id')
+        course_obj = models.Course.objects.filter(pk=course_id).first()
+        if course_obj:
+            ret["msg"] = "瞎输课程"
+            ret["code"] = 1001
+        else:
+            price_policies = course_obj.price_policy.all()
+            policies_id = [i.id for i in price_policies]
+            policies_list = [{'id':i.id, 'valid_period':i.get_valid_period_display(),'price':i.price} for i in price_policies]  # 老师的比这个好，少用一个for循环
+            if not price_policy_id in policies_id:
+                ret["msg"] = "瞎输钱数"
+                ret["code"] = 1002
+            else:
+                # 构造一个表
+                course_dict = {
+                    'id': course_obj.id,
+                    'img': course_obj.course_img,
+                    'title': course_obj.name,
+                    'price_policy_list': policies_list,
+                    'default_policy_id': price_policy_id
+                }
+                conn = redis.Connection(pool=utils.pool)
+                nothing = conn.hget("Chart", request.user.id)
+                if not nothing:
+                    data = {course_obj.id: course_dict}
+                else:
+                    data = json.loads(nothing.decode('utf-8'))
+                    data[course_obj.id] = course_dict
+                conn.hset("Chart", request.user.id, json.dumps(data))
+        return ret
+    
 

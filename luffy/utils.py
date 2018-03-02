@@ -5,6 +5,10 @@ from luffy import models
 import os
 import binascii
 import datetime
+import redis
+
+
+pool = redis.ConnectionPool(host='localhost', port=6379, db=0)
 
 class TokenAuthentication(BaseAuthentication):
     def authenticate(self, request):
@@ -48,3 +52,6 @@ class ArticleSerializer(serializers.ModelSerializer):
         #     'user': {'min_length': 6},
         #     'pwd': {'validators': [PasswordValidator(666), ]},
         # }
+
+
+
