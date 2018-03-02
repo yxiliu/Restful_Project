@@ -21,7 +21,7 @@ class LoginAuthentication(BaseAuthentication):
     code = 1010 # 错误
     '''
     def authenticate(self, request):
-        if request._request.method =='POST':
+        if request._request.method !='OPTIONS':
             user = request.data.get('username', None)
             pwd = request.data.get('password', None)
             obj = models.Account.objects.filter(username=user, password=pwd).first()
@@ -44,3 +44,7 @@ class ArticleSerializer(serializers.ModelSerializer):
         model = models.Article
         fields =[ 'id', 'title', 'brief', 'head_img','view_num', 'date','comment_num', 'collect_num','agree_num', 'content','source']
         depth = 2
+        # extra_kwargs = { 添加规则
+        #     'user': {'min_length': 6},
+        #     'pwd': {'validators': [PasswordValidator(666), ]},
+        # }

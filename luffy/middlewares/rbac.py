@@ -21,7 +21,7 @@ class MiddlewareMixin(object):
 
 class LoginMiddleware(MiddlewareMixin):
     def process_request(self,request):
-        if request.path_info == '/login/' :
+        if request.path_info == '/login/':
             return None
 
         # if request.COOKIES.get(settings.COOKIES_KEY,None):
@@ -33,39 +33,21 @@ class LoginMiddleware(MiddlewareMixin):
 
     def process_response(self,request,response):
         response['Access-Control-Allow-Origin'] = "*"
-        response['Access-Control-Allow-Headers'] = '*' #headers 不写*  有多少加多少 逗号分隔
+        response['Access-Control-Allow-Headers'] = 'content-type'
         response['Access-Control-Allow-Methods'] = '*'
         return response
 
-# class RbacMiddleware(MiddlewareMixin):
-#
-#     def process_request(self,request):
-#         # 1. 获取当前请求的URL
-#         # request.path_info
-#         # 2. 获取Session中保存当前用户的权限
-#         # request.session.get("permission_url_list')
-#         current_url = request.path_info
-#
-#         # 当前请求不需要执行权限验证
-#         for url in settings.VALID_URL:
-#             if re.match(url,current_url):
-#                 return None
-#
-#         permission_dict = request.session.get(settings.PERMISSION_URL_DICT_KEY)
-#         if not permission_dict:
-#             return redirect('/login/')
-#
-#         flag = False
-#         for group_id,code_url in permission_dict.items():
-#
-#             for db_url in code_url['urls']:
-#                 regax = "^{0}$".format(db_url)
-#                 if re.match(regax, current_url):
-#                     request.permission_code_list = code_url['codes']
-#                     flag = True
-#                     break
-#             if flag:
-#                 break
-#
-#         if not flag:
-#             # return HttpResponse('无权访问')
+class RbacMiddleware(MiddlewareMixin):
+
+    def process_request(self,request):
+        print(request.body)
+        username = request.GET.get('cookie')
+        print(username)
+        if request.path=="/login/":
+            return None
+        if username!="null":
+            return None
+        else:
+            print(111)
+            return JsonResponse({'rbac': False})
+
