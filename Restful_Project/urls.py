@@ -13,16 +13,10 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url
+from django.conf.urls import url,include
 from django.contrib import admin
 from luffy import views as vluffy
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^login/', vluffy.Login().as_view()),
-    url(r'^courses/$', vluffy.CoursesView.as_view()),
-    url(r'^courses/(?P<pk>\d+)\.(?P<format>[a-z0-9]+)$', vluffy.CoursesView.as_view()),
-    url(r'^news/$', vluffy.News().as_view()),
-    url(r'^news/detail/(?P<nid>\d+)/$', vluffy.NewsDetail().as_view()),
-
-    url(r'^article/collection/(?P<nid>\d+)/$', vluffy.ArticleCollection().as_view()),#文章点赞
+    url(r'^api/', include("luffy.url")),
 ]

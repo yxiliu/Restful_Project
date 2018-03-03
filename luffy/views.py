@@ -5,7 +5,6 @@ from rest_framework import exceptions
 from django.contrib.contenttypes.models import ContentType
 from django.http import JsonResponse,HttpResponse
 from rest_framework.viewsets import ModelViewSet,generics
-generics.GenericAPIView
 from luffy import models
 from luffy import utils
 from django.db import transaction
@@ -104,7 +103,7 @@ class CoursesView(APIView):
         response = JsonResponse(ret)
         response['Access-Control-Allow-Origin'] = "*"
         return response
-    
+
 
 
 class NewsDetail(APIView):
@@ -187,5 +186,35 @@ class CartView(APIView):
                     data[course_obj.id] = course_dict
                 conn.hset("Chart", request.user.id, json.dumps(data))
         return ret
-    
 
+
+
+
+class Myorder(APIView):
+    authentication_classes = [utils.TokenAuthentication,]
+    def get(self,request,*args,**kwargs):
+        many_order_data = []
+        sending_data = {"code":1000,"data":many_order_data,"msg":"good"}
+        if request.user:
+            order_obj_list = request.user.order_set.all()
+            for ord_obj in order_obj_list:
+                # ord_obj.order_number  # 订单号
+                # ord_obj.actual_amount  # 实付金额
+                # ord_obj.get_status_display() # 订单状态
+                set_Of_order_details = ord_obj.orderdetail_set.all()
+                detiallist=[{"course_name":order_details.content_object.name,"order_valid_period":order_details.valid_period_display,"course_period":order_details.valid_period,"price_after_discount":order_details.price} for order_details in set_Of_order_details]
+                    # order_details.content_object.name  # 关联的课程？
+                    # order_details.valid_period_display   # 订单有效日期
+                    # order_details.original_price  #
+                    # order_details.valid_period  # 课程有效期
+                    # order_details.price # 折后价格
+                coupons = ord_obj.couponrecord_set.all()
+                couponlist=[couponre.coupon.name for couponre in coupons]
+                each_order = {"order_number":ord_obj.order_number,"actual_amout":ord_obj.actual_amount,"order_status":ord_obj.get_status_display(),
+                                "detaillist":detiallist}
+                many_order_data.append(each_order)
+                sending_data["data"] = many_order_data
+        else:
+            sending_data["code"] = 1001
+            sending_data["msg"] = "no user was found"
+        return Response(sending_data)

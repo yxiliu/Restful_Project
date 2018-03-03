@@ -149,11 +149,11 @@ REST_FRAMEWORK = {
         #     'myscope_user':'10/minute',
         # },
         #版本
-        # 'DEFAULT_VERSION':'v1',
-        # 'ALLOWED_VERSIONS':'[v1,v2]',
-        # 'VERSION_PARAM':'version',
+        'DEFAULT_VERSION':'v1',
+        'ALLOWED_VERSIONS':'[v1,v2]',
+        'VERSION_PARAM':'version',
         # 'DEFAULT_VERSIONING_CLASS':"rest_framework.versioning.QueryParameterVersioning",
-        # 'DEFAULT_VERSIONING_CLASS':"rest_framework.versioning.URLPathVersioning",
+        'DEFAULT_VERSIONING_CLASS':"rest_framework.versioning.URLPathVersioning",
 
         #解析器 parser
         # 'DEFAULT_PARSER_CLASSES':[
